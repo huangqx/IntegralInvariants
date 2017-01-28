@@ -9,10 +9,13 @@ Para.gridRes = 0.01; // grid resolution for discretzing the
                         volume integral
 
 // Load the mesh
+
 Mesh = read_from_obj('Data/bunny.obj');
 
 // Compute the volume descriptors
+
 vertexDess = volume_invariant_3d(Mesh, Para);
 
 // Save the descriptors
+
 save_descriptors(vertexDess, 'Data/bunny_dess.txt');
